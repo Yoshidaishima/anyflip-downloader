@@ -74,7 +74,7 @@ func run() {
 		http.DefaultTransport.(*http.Transport).TLSClientConfig = &tls.Config{InsecureSkipVerify: true}
 	}
 
-	fmt.Println("Preparing to download")
+	fmt.Println("Preparing to REALLY download")
 	flipbook, err := prepareDownload(anyflipURL)
 	if err != nil {
 		log.Fatal(err)
