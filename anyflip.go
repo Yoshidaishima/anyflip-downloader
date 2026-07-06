@@ -53,6 +53,12 @@ func prepareDownload(anyflipURL *url.URL) (*flipbook, error) {
 
 	downloadURL, _ := url.Parse("https://online.anyflip.com/")
 	println(newFlipbook.URL.String())
+
+	// DEBUG
+	fmt.Printf("pageCount=%d, filenames=%d\n",
+    newFlipbook.pageCount,
+    len(pageFileNames))
+	
 	if len(pageFileNames) == 0 {
 		for i := 1; i <= newFlipbook.pageCount; i++ {
 			downloadURL.Path = path.Join(newFlipbook.URL.Path, "files", "mobile", strconv.Itoa(i)+".jpg")
