@@ -1,4 +1,4 @@
-module github.com/Lofter1/anyflip-downloader
+module github.com/Yoshidaishima/anyflip-downloader
 
 go 1.25.0
 
