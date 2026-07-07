@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define the GitHub repository and release API URL
-repo="Lofter1/anyflip-downloader"
+repo="Yoshidaishima/anyflip-downloader"
 api_url="https://api.github.com/repos/$repo/releases/latest"
 application_dir="$HOME/.local/share/anyflip-downloader"
 install_dir="$HOME/.local/bin"
